@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Months & Forever More</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for a custom look and the Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Custom styles for the dark, immersive experience */
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.5s ease;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* Subtle glow for the main call to action */
+        .cta-glow {
+            box-shadow: 0 0 15px rgba(236, 72, 153, 0.7); /* Rose-500 glow */
+            transition: all 0.3s ease;
+        }
+
+        .cta-glow:hover {
+            box-shadow: 0 0 25px rgba(244, 114, 182, 1); /* Brighter glow on hover */
+            transform: scale(1.02);
+        }
+        
+        /* Ensures the background image is covered */
+        #bg-overlay {
+            background-image: url('https://placehold.co/1920x1080/0f172a/6d28d9?text=Our+Time+Together');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            transition: opacity 2s ease;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172a', /* Slate-900 */
+                        'accent-pink': 'rgb(236, 72, 153)', /* Rose-500 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-dark text-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Subtle Background Overlay (for visual depth) -->
+    <div id="bg-overlay" class="absolute inset-0 z-0"></div>
+
+    <!-- Main Content Container -->
+    <div class="relative z-10 w-full max-w-4xl mx-auto py-16">
+
+        <!-- Phase 1: The Entrance Gate (Initial Click) -->
+        <section id="step-1" class="text-center fade-in h-screen flex flex-col items-center justify-center">
+            <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-6">
+                10 Months.
+            </h1>
+            <p class="text-xl md:text-3xl text-gray-400 mb-12">
+                A Journey We Created.
+            </p>
+            <button id="start-button" class="cta-glow bg-accent-pink text-white font-bold py-3 px-8 rounded-full text-lg uppercase transition transform hover:scale-105" onclick="startJourney()">
+                Open the Memory Box
+            </button>
+        </section>
+
+        <!-- Phase 2: The Timeline & Reflection -->
+        <section id="step-2" class="hidden min-h-screen pt-20">
+            <h2 class="text-5xl font-bold text-accent-pink mb-10 text-center fade-in" style="animation-delay: 0.5s;">
+                The Story So Far...
+            </h2>
+            <div class="space-y-12">
+                
+                <!-- Milestone 1 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl fade-in" style="animation-delay: 1.0s;">
+                    <p class="text-sm uppercase tracking-widest text-gray-400 mb-2">Chapter 1: The Beginning</p>
+                    <h3 class="text-3xl font-semibold text-white mb-4">First Sparks</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        First it all started from that Hi text and we instantly clicked and became really close in just few days and icl those days were so so good. We re talking all day and and we cant forget about that (su che bhai tane) thing.
+                    </p>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl fade-in" style="animation-delay: 1.5s;">
+                    <p class="text-sm uppercase tracking-widest text-gray-400 mb-2">Chapter 2: Love & rough nights</p>
+                    <h3 class="text-3xl font-semibold text-white mb-4">Loving Each other</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        On a random day of 28th Feb idk how you came up with that prank which led us here this far, well we still got far more to go but still 10 months is no joke and yk how hard we had to work to get here. I just love everything about you, yea you get angry sometimes but its okay everythings comes with a con and you just gotta find something positive and fun in that (im saying this well knowing you got me with a godamn truck full of cons but we re not gon talk about it right? heh).
+                    </p>
+                </div>
+
+                <div class="text-center mt-16 fade-in" style="animation-delay: 2.0s;">
+                    <button class="cta-glow bg-accent-pink text-white font-bold py-3 px-8 rounded-full text-lg uppercase" onclick="nextStep(3)">
+                        Continue to the Message
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 3: The Heartfelt Message -->
+        <section id="step-3" class="hidden min-h-screen flex flex-col items-center justify-center text-center">
+            <div class="w-full max-w-2xl">
+                <h2 class="text-6xl font-extrabold text-accent-pink mb-8 fade-in" style="animation-delay: 0.5s;">
+                    To My Everything
+                </h2>
+                <div class="text-xl md:text-2xl text-gray-300 space-y-6 bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl shadow-3xl border border-rose-800/50 fade-in" style="animation-delay: 1.0s;">
+                    <p>
+                        Happy 10 months Aasthuuuuu. It feels like we just started dating yesterday damn it was really fast and rn i just wanna hug you tightly and never leave your side. I am really excited for your trip tara thi bhi vadhare. It would be fun trust i wish i could go with you but yk... But ay i atleast get to see you smile again :)
+                    </p>
+                    <p>
+                        Thank you so so so much for everything for being there with me when i thought everythings gon fall apart. I love you so muchhhhh. Ur the best person ive ever met in my life and i dont wanna lose you. I ll always be your One in a million, I ll celebrate your smallest accomplishment and i ll support you when ur at your lowest.
+                    </p>
+                    <p class="text-accent-pink font-semibold mt-8">
+                        I love you more than words can say.
+                    </p>
+                </div>
+                <div class="mt-12 fade-in" style="animation-delay: 1.5s;">
+                    <button class="cta-glow bg-accent-pink text-white font-bold py-3 px-8 rounded-full text-lg uppercase" onclick="nextStep(4)">
+                        One Last Surprise
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 4: Interactive Closing (The Star) -->
+        <section id="step-4" class="hidden min-h-screen flex flex-col items-center justify-center text-center">
+            <h2 class="text-5xl font-bold text-white mb-12 fade-in">
+                You Are My Constellation
+            </h2>
+            <div id="star-container" class="relative w-80 h-80 flex items-center justify-center">
+                <!-- SVG Icon of a star (simplified placeholder for interaction) -->
+                <svg id="anniversary-star" class="w-full h-full text-accent-pink cursor-pointer transition transform duration-500 hover:scale-110 hover:rotate-6 active:scale-90" viewBox="0 0 24 24" fill="currentColor" onclick="openStar()">
+                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.88 1.888 8.24-7.824-4.175-7.824 4.175 1.888-8.24-6.064-5.88 8.332-1.151z"/>
+                </svg>
+                <div id="star-message" class="absolute text-white text-center text-sm p-4 bg-gray-900 rounded-lg opacity-0 pointer-events-none transition duration-500 transform scale-90" style="width: 150%; top: 50%; left: 50%; translate: -50% -50%;">
+                    You shine brighter than any star. This one is for you. ❤️
+                </div>
+            </div>
+            <div class="mt-12 fade-in" style="animation-delay: 0.5s;">
+                <button class="cta-glow bg-gray-700 text-white font-bold py-3 px-8 rounded-full text-lg uppercase" onclick="nextStep(5)">
+                    The Final Note
+                </button>
+            </div>
+        </section>
+        
+        <!-- Phase 5: The Signature/Closing -->
+        <section id="step-5" class="hidden min-h-screen flex flex-col items-center justify-center text-center">
+            <h2 class="text-7xl md:text-9xl font-extrabold text-accent-pink tracking-tighter mb-8 fade-in" style="animation-delay: 0.5s;">
+                Always.
+            </h2>
+            <p class="text-2xl md:text-4xl text-gray-400 mb-10 fade-in" style="animation-delay: 1.0s;">
+                Yours forever,
+            </p>
+            <p class="text-3xl md:text-5xl font-serif italic text-white fade-in" style="animation-delay: 1.5s;">
+                Your Kanhoo
+            </p>
+            <p class="text-lg text-gray-500 mt-16 fade-in" style="animation-delay: 2.0s;">
+                (Come on stop blushing hehe)
+            </p>
+        </section>
+    </div>
+
+    <!-- JavaScript for the Guided Journey & Interactions -->
+    <script>
+        // Global variables
+        let currentStep = 1;
+        const totalSteps = 5;
+        const sections = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Collect all step sections
+            for (let i = 1; i <= totalSteps; i++) {
+                const section = document.getElementById(`step-${i}`);
+                if (section) {
+                    sections.push(section);
+                }
+            }
+
+            // Ensure only the first step is visible initially
+            sections.forEach((section, index) => {
+                section.style.display = index === 0 ? 'flex' : 'none';
+            });
+            
+            // Set up a scroll listener for Phase 2 visibility control
+            if (document.getElementById('step-2')) {
+                window.addEventListener('scroll', checkPhase2Visibility);
+            }
+        });
+
+        // Function to move to the next step (used by buttons)
+        function nextStep(step) {
+            if (step > totalSteps) return;
+            
+            // Hide all sections
+            sections.forEach(section => {
+                section.style.display = 'none';
+                section.classList.remove('fade-in');
+            });
+
+            // Show the target section and apply fade-in
+            const nextSection = document.getElementById(`step-${step}`);
+            if (nextSection) {
+                nextSection.style.display = 'flex';
+                // Wait a moment for display change before applying animation
+                setTimeout(() => {
+                    nextSection.classList.add('fade-in');
+                    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of the new section
+                }, 50); 
+                currentStep = step;
+            }
+        }
+
+        // Start the journey from step 1
+        function startJourney() {
+            // Change background image overlay opacity for a subtle transition effect
+            document.getElementById('bg-overlay').style.opacity = '0.2';
+            nextStep(2);
+        }
+        
+        // Simple Interaction: Clicking the star reveals a hidden message
+        function openStar() {
+            const star = document.getElementById('anniversary-star');
+            const message = document.getElementById('star-message');
+            
+            if (message.style.opacity === '1') {
+                // Close message
+                message.style.opacity = '0';
+                message.classList.remove('scale-100');
+                message.classList.add('scale-90');
+                star.style.color = 'rgb(236, 72, 153)'; // Reset color
+            } else {
+                // Open message
+                message.style.opacity = '1';
+                message.classList.add('scale-100');
+                message.classList.remove('scale-90');
+                star.style.color = 'rgb(255, 255, 255)'; // Change star color
+            }
+        }
+
+        // --- Phase 2 Scroll Logic (Simulated Intersection Observer) ---
+        // Since we can't use complex libraries, we'll use a simple scroll check
+        function checkPhase2Visibility() {
+            const step2 = document.getElementById('step-2');
+            if (!step2 || currentStep !== 2) return;
+
+            // Get all children of step-2 that have the fade-in class and animation-delay
+            const elements = step2.querySelectorAll('.fade-in[style*="animation-delay"]');
+            
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                // If the element is 3/4ths in the viewport, force its animation to start
+                if (rect.top < (window.innerHeight * 0.75)) {
+                    el.style.opacity = 1; // Immediately set opacity to 1
+                    el.style.animationPlayState = 'running';
+                    el.style.animation = 'none'; // Stop the animation for a clean appearance
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
